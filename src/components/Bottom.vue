@@ -4,24 +4,27 @@
       <footer>
         <div class="mini">
 
-            <div class="img-player-left"> <img  src="../assets/sinister.jpeg" alt=""> </div>
+            <div class="img-player-left"> <img  src="https://images-na.ssl-images-amazon.com/images/I/51hbSVg115L._AC_SX466_.jpg" alt=""> </div>
             <div class="mini-txt">
-              <h5 class="txt-wh">Sinister</h5>
-              <div class="txt-gr">Brano Nome</div>
+              <h5 class="txt-wh">Motorhead</h5>
+              <div class="txt-gr">Ace of Spades</div>
             </div>
 
             <div>
-              <i class="mini-fa fa fa-folder-o" aria-hidden="true"></i>
-              <i class="mini-fa fa fa-heart-o" aria-hidden="true"></i>
+              <i class="mini-fa fa fa-folder" aria-hidden="true"></i>
+              <i class="mini-fa fa fa-heart" aria-hidden="true"></i>
             </div>
 
         </div>
         <div class="player">
+          <div class="player-container">
             <div class="player-control-bar">
               <ul>
                 <li><i class="fa fa-random"></i></li>
                 <li><i class="fa fa-step-backward" aria-hidden="true"></i></li>
-                <li class="big"><i class="fa fa-play-circle-o" aria-hidden="true"></i></li>
+                <li class="big">
+                  <i class="play-btn far fa-play-circle"></i>
+                </li>
                 <li><i class="fa fa-step-forward" aria-hidden="true"></i></li>
                 <li><i class="fa fa-repeat" aria-hidden="true"></i></li>
               </ul>
@@ -31,6 +34,7 @@
                 <div class="point"></div>
               </div>
             </div>
+          </div>
         </div>
 
         <div class="options">
@@ -97,12 +101,14 @@ footer {
   justify-content: space-around;
   align-items: center;
   display: flex;
+  width: 384px;
 }
 
 .options{
   justify-content: space-around;
   align-items: center;
   display: flex;
+  width: 384px;
 }
 
 .option-fa{
@@ -122,6 +128,10 @@ footer {
 .player {
   width: 60%;
   text-align: center;
+  display: flex;
+  .player-container{
+    width: 100%;
+  }
 }
 
 .player ul {
@@ -136,7 +146,7 @@ footer {
   padding: 10px;
 }
 
-.player ul li.big {
+.player ul li.big .play-btn {
   font-size: 32px;
   padding: 10px 20px;
 }
